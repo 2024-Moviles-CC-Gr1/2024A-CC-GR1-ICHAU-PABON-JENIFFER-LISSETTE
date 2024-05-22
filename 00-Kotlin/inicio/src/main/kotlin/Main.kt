@@ -124,9 +124,6 @@ fun main() {
     println(respuestaReduce)
 }//termina main
 
-
-
-
 fun imprimirNombre(nombre:String): Unit{
     println("Nombre: $(nombre)") //Template Strings
 }
@@ -180,7 +177,7 @@ abstract class Numeros( //Constructor primario
 class Suma(
     unoParametro:Int, //Parametro
     dosParametro:Int, //Parametro
-): Numeros( //Clase papa, Numeros (extendiendo)
+): Numeros( //Clase padre, Numeros (extendiendo)
     unoParametro,
     dosParametro
 ){
