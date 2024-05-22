@@ -1,6 +1,7 @@
 import java.awt.datatransfer.StringSelection
 import java.util.*
 import kotlin.collections.ArrayList
+import kotlin.collections.ArrayList
 
 fun main() {
     println("Hola mundo")
@@ -123,6 +124,7 @@ fun main() {
         }
     println(respuestaReduce)
 }//termina main
+
 
 fun imprimirNombre(nombre:String): Unit{
     println("Nombre: $(nombre)") //Template Strings
