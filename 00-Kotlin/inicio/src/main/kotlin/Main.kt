@@ -1,5 +1,6 @@
 import java.awt.datatransfer.StringSelection
 import java.util.*
+import kotlin.collections.ArrayList
 
 fun main() {
     println("Hola mundo")
@@ -61,7 +62,69 @@ fun main() {
     println(Suma.elevarAlCuadrado(2))
     println(Suma.historialSuma)
 
+
+    //Arreglos
+    //Estatico
+    val arregloEstatico: Array<Int> = arrayOf<Int>(1,2,3)
+    println(arregloEstatico)
+
+    //Dinamico
+    val arregloDinamico: ArrayList<Int> = arrayListOf<Int>(1,2,3,4,5,6,7,8,9)
+    println(arregloDinamico)
+    arregloDinamico.add(11)
+    arregloDinamico.add(12)
+    println(arregloDinamico)
+
+    //FOR EACH => Unit
+    //Iterar un arreglo
+    val respuestaForEach: Unit = arregloDinamico
+        .forEach{valorActual: Int ->
+            println("Valor actual: ${valorActual}");
+        }
+    //*it (en ingles "eso") significa el elemento iterado
+    arregloDinamico.forEach{ println("Valor Actual (it): ${it}") }
+
+    //Operador map
+    val respuestaMap: List<Double> = arregloDinamico
+        .map{valorActual: Int ->
+            return@map valorActual.toDouble() + 100
+        }
+    println(respuestaMap)
+    val respuestaMapDos = arregloDinamico.map { it + 15 }
+    println(respuestaMapDos)
+
+    //Operador Filter
+    val respuestaFilter: List<Int> = arregloDinamico
+        .filter { valorActual: Int ->
+            val mayoresACinco: Boolean = valorActual > 5
+            return@filter mayoresACinco
+        }
+    val respuestaFilterDos = arregloDinamico.filter { it <= 5 }
+    println(respuestaFilter)
+    println(respuestaFilterDos)
+
+    //Operador any (OR)
+    val respuestaAny: Boolean = arregloDinamico
+        .any{ valorActual: Int ->
+            return@any (valorActual > 5)
+        }
+    println(respuestaAny)
+    //Operador all (AND)
+    val respuestaAll: Boolean = arregloDinamico
+        .all{valorActual: Int ->
+            return@all (valorActual > 5)
+        }
+    println(respuestaAll)
+
+    //Operador reduce
+    val respuestaReduce: Int = arregloDinamico
+        .reduce{ acumulado: Int, valorActual: Int ->
+            return@reduce (acumulado+valorActual)
+        }
+    println(respuestaReduce)
 }//termina main
+
+
 
 
 fun imprimirNombre(nombre:String): Unit{
