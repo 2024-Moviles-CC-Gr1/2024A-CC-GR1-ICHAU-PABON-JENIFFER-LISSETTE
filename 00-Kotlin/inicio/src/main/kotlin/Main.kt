@@ -1,7 +1,6 @@
 import java.awt.datatransfer.StringSelection
 import java.util.*
 import kotlin.collections.ArrayList
-import kotlin.collections.ArrayList
 
 fun main() {
     println("Hola mundo")
