@@ -3,18 +3,18 @@ package com.example.a2024accgr1jlip
 import android.os.Parcel
 import android.os.Parcelable
 
-class BEntrenador (
+class BEntrenador(
     var id:Int,
     var nombre:String,
     var descripcion:String?
-    ): Parcelable {
+): Parcelable {
     constructor(parcel: Parcel) : this(
         parcel.readInt(),
         parcel.readString()!!,
         parcel.readString()
     ) {
-
     }
+
     override fun toString(): String {
         return "$nombre ${descripcion}"
     }
@@ -38,4 +38,5 @@ class BEntrenador (
             return arrayOfNulls(size)
         }
     }
+
 }
