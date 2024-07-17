@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cl_sqlite_hospital"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ECrudHospital">
+
+    <EditText
+        android:id="@+id/input_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Ingrese ID"
+        app:layout_constraintBottom_toTopOf="@+id/input_nombre_hospital"
+        app:layout_constraintEnd_toEndOf="@+id/input_nombre_hospital"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/input_nombre_hospital" />
+
+    <EditText
+        android:id="@+id/input_nombre_hospital"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Ingrese nombre"
+        app:layout_constraintBottom_toTopOf="@+id/input_direccion_hospital"
+        app:layout_constraintEnd_toEndOf="@+id/input_direccion_hospital"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/input_direccion_hospital" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="186dp"
+        android:layout_height="39dp"
+        android:layout_marginBottom="24dp"
+        android:text="REGISTRO DE HOSPITAL"
+        app:layout_constraintBottom_toTopOf="@+id/input_id"
+        app:layout_constraintEnd_toEndOf="@+id/input_id"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toStartOf="@+id/input_id" />
+
+    <EditText
+        android:id="@+id/input_direccion_hospital"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Ingrese direccion"
+        app:layout_constraintBottom_toTopOf="@+id/input_capacidad_hospital"
+        app:layout_constraintEnd_toEndOf="@+id/input_capacidad_hospital"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/input_capacidad_hospital" />
+
+    <EditText
+        android:id="@+id/input_capacidad_hospital"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Ingrese capacidad"
+        app:layout_constraintBottom_toTopOf="@+id/input_fecha_fundacion"
+        app:layout_constraintEnd_toEndOf="@+id/input_fecha_fundacion"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/input_fecha_fundacion" />
+
+    <EditText
+        android:id="@+id/input_fecha_fundacion"
+        android:layout_width="228dp"
+        android:layout_height="51dp"
+        android:layout_marginBottom="28dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Ingrese fecha de fundacion"
+        app:layout_constraintBottom_toTopOf="@+id/btn_crear_bdd_hospital"
+        app:layout_constraintEnd_toEndOf="@+id/btn_crear_bdd_hospital"
+        app:layout_constraintStart_toStartOf="@+id/btn_crear_bdd_hospital" />
+
+    <Button
+        android:id="@+id/btn_buscar_bdd_hospital"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="28dp"
+        android:text="Buscar"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_crear_bdd_hospital"
+        app:layout_constraintEnd_toStartOf="@+id/btn_crear_bdd_hospital"
+        app:layout_constraintTop_toTopOf="@+id/btn_crear_bdd_hospital"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/btn_crear_bdd_hospital"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Crear"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.479"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.609" />
+
+    <Button
+        android:id="@+id/btn_actualizar_bdd_hospital"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:text="Actualizar"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_crear_bdd_hospital"
+        app:layout_constraintStart_toEndOf="@+id/btn_crear_bdd_hospital"
+        app:layout_constraintTop_toTopOf="@+id/btn_crear_bdd_hospital"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/btn_eliminar_bdd_hospital"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="Eliminar"
+        app:layout_constraintEnd_toEndOf="@+id/btn_crear_bdd_hospital"
+        app:layout_constraintStart_toStartOf="@+id/btn_crear_bdd_hospital"
+        app:layout_constraintTop_toBottomOf="@+id/btn_crear_bdd_hospital" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

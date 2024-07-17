@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "790800219615",
+    "project_id": "jlip-2024a-cc-gr1-deber2",
+    "storage_bucket": "jlip-2024a-cc-gr1-deber2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:790800219615:android:bfe66338942bec4786d86a",
+        "android_client_info": {
+          "package_name": "com.example.a2024accgr1jlip"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDyyn1pWLUn-4h13GrQRiXX2kvJ1n5rFmQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
