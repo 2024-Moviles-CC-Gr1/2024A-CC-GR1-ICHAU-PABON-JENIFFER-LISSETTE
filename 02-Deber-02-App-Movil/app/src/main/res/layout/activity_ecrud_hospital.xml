@@ -35,13 +35,15 @@
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="186dp"
-        android:layout_height="39dp"
+        android:layout_width="215dp"
+        android:layout_height="43dp"
         android:layout_marginBottom="24dp"
+        android:orientation="horizontal"
         android:text="REGISTRO DE HOSPITAL"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         app:layout_constraintBottom_toTopOf="@+id/input_id"
         app:layout_constraintEnd_toEndOf="@+id/input_id"
-        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/input_id" />
 
     <EditText
