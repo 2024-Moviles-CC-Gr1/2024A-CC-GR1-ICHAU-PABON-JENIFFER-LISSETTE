@@ -1,5 +1,6 @@
 package com.example.a2024accgr1jlip
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
@@ -16,6 +17,7 @@ class ECrudHospital : AppCompatActivity() {
         )
         snack.show()
     }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_ecrud_hospital)
@@ -83,5 +85,16 @@ class ECrudHospital : AppCompatActivity() {
             val respuesta = EBaseDeDatos.tablaHospital!!.eliminarHospital(id.text.toString().toInt())
             if (respuesta) mostrarSnackbar("Hospital eliminado")
         }
+
+        val BotonGMaps = findViewById<Button>(R.id.btn_google_maps)
+        BotonGMaps.setOnClickListener {
+            irActividad(GGoogleMapsActivity::class.java)
+        }
+    }
+    fun irActividad(
+        clase: Class<*>
+    ){
+        val intent = Intent(this, clase)
+        startActivity(intent)
     }
 }

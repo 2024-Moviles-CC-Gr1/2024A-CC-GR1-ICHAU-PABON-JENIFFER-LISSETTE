@@ -128,4 +128,15 @@
         app:layout_constraintStart_toStartOf="@+id/btn_crear_bdd_hospital"
         app:layout_constraintTop_toBottomOf="@+id/btn_crear_bdd_hospital" />
 
+    <Button
+        android:id="@+id/btn_google_maps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Mapa Oficina central"
+        app:layout_constraintEnd_toEndOf="@+id/btn_eliminar_bdd_hospital"
+        app:layout_constraintHorizontal_bias="0.425"
+        app:layout_constraintStart_toStartOf="@+id/btn_eliminar_bdd_hospital"
+        app:layout_constraintTop_toBottomOf="@+id/btn_eliminar_bdd_hospital" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
